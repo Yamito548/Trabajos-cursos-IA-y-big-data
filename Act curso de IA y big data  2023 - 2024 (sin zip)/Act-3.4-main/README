@@ -1,0 +1,33 @@
+El objetivo de esta actividad es poner en práctica los conocimientos adquiridos para el
+preprocesamiento de datos, selección de características y entrenamiento de modelos.
+Para ello es necesario seleccionar un Dataset que consideres oportuno, de clasificación o
+regresión, y distinto a los utilizados en clase.
+Los puntos a desarrollar son los siguientes:
+1. (5%) Describir el origen y breve explicación del Dataset, así como de cada una de las
+características.
+2. (5%) Procesamiento y normalización de datos en el dataset
+3. Utilizar las siguientes herramientas explicadas en clase para la selección de características:
+3.1. (10%) Matriz de gráficos de correlación.
+3.2. (10%) Matriz de gráficos de dispersión.
+3.3. (10%) SelectKBest.
+4. (5%) Una pequeña reflexión sobre la elección de las características elegidas.
+5. Con las librerías para NaiveBayes vistas en clase, entrenar el modelo que consideres más
+adecuado.
+5.1. (10%) Sin utilizar Cross Validation.
+5.2. (15%) Utilizando Cross Validation.
+6. (5%) Obtener una conclusión sobre los resultados obtenidos en la predicción y evaluación
+al utilizar o no Cross Validation.
+7. (10%) Además de las herramientas indicadas anteriormente, se valorará la utilización de
+alguna otra herramienta o técnica no vista en el curso para la selección de las
+características.
+(10%) Formato:
+ El pdf final tiene una portada.
+ Se utiliza un índice, apartado de conclusiones y referencias (web).
+ Se hace mención a referencias externas, no recogidas en el material
+suministrado.
+(5%) Aportaciones personales:
+ Se enriquece la actividad con aportaciones personales distintas a las soliitadas
+en la propia actividad: de opinión, estrategia, herramientas utilizadas en la
+resolución de la actividad o elementos gráficos (dibujos,fórmulas, etc) en el
+propio cuaderno de Google Colab
+

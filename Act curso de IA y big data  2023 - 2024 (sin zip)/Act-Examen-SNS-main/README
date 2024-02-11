@@ -1,0 +1,29 @@
+##
+El dataset usado esta adjunto, lo saque de kaggle. https://www.kaggle.com/datasets/rajyellow46/wine-quality
+##
+Haciendo del mismo Dataset de la actividad 3.4 y del conocimiento y experiencia adquirida
+en ella, completar el trabajo realizado con los siguientes puntos:
+1. (10%) Entrenar un modelo utilizando KNN. Realizar una búsqueda de los
+parámetros que ofrecen mejores resultados aplicando Cross Validation.
+Se valorará si se utiliza una gráfica para mostrar los diferentes niveles precisión
+para cada uno de los parámetros probados.
+2. (10%) Entrenar un modelo utilizando alguna de las técnicas de árboles que hemos
+visto en clase. Si no ha dado tiempo de verlo en clase se propone realizar una
+pequeña investigación sobre posibles modelos y proponer uno que consideren
+adecuado para el entrenamiento. Justificando la elección del mismo.
+3. (10%) De las tres técnicas utilizadas (NAIVEBAYES, KNN, ARBOLES), selecciona
+aquella que te ofrece mejores resultados de predicción. Argumenta tu elección.
+4. (5%) Exporta el fichero .pkl que contiene el modelo y los parámetros utilizados
+durante el entrenamiento..
+Como referencia puedes utilizar el siguiente ejemplo.
+Título: Ejemplo_3_3_Clasificación_con_Naive_Bayes_(Heart_Diseases).ipynb
+Url:https://colab.research.google.com/drive/1vt1_mUA_IsUHwEMYBuorX0SpvtOHUcId?usp=sharing#scrollTo=a7awMx24DXZy
+5. (10%) Importa el modelo .pkl y realiza una predicción utilizando un conjunto de
+valores, definido por ti, asociados a las características con las que entrenaste el
+modelo.
+6. (20%) Con el objeto de que el usuario final pueda validar el trabajo de Machine
+Learning, realiza una demo de publicación de apiRest y miniaplicación web
+utilizando la técnica Streamlit vista en clase.
+Si lo deseas puedes utilizar otra técnica o librerías de servicios apirest; en este caso
+explica de forma escueta la técnica y pasos realizados.
+7. (20%) Explicación del proyecto y Defensa con el profesor

@@ -1,0 +1,110 @@
+#Hecho Por Dylan Jesús Ramirez Bermudez, ejercicio 3.1 de la asignatura de sistemas de aprendizaje autmatico IES EL RINCON
+
+#Error absoluto medio - mae
+from sklearn.metrics import mean_absolute_error
+# Ejemplo 1
+y_true = [2.5, 0, 2, 8]
+y_pred = [2.5, 0, 2, 8]
+mean_absolute_error(y_true, y_pred)
+
+# Ejer 1: Crear dos vectores/arrays de valores ciertos y valores previstos, y calcular el mae.
+y_true = [3.5, 0, 2, 8]
+y_pred = [2.5, 5, 8, 8]
+ejer1 = mean_absolute_error(y_true, y_pred)
+print("Ejercicio 1: ",ejer1)
+# ¿Qué valores deberían de tener el array pred para que el error fuese 0? ¿y para que error fuese de 0.25?
+# Para que tuvieran valores 0 seria poner en ambos array los mismis valores.
+y_true = [3.5, 0, 2, 8]
+y_pred = [3.5, 0, 2, 8]
+mean_absolute_error(y_true, y_pred)
+
+# #Si quieres que el valor sea 0.25 deberán ser cambiar un numero:
+y_true = [3.5, 0, 2, 8]
+y_pred = [3.5, 0.6, 2.2, 7.8]
+mean_absolute_error(y_true, y_pred)
+
+# Ejemplo 2
+y_true = [[0.5, 1], [-1, 1], [7, -6]]
+y_pred = [[0, 2], [-1, 2], [8, -5]]
+mean_absolute_error(y_true, y_pred)
+
+# Ejer 2: Crear dos matrices/arrays de valores ciertos y valores previstos, y calcular el mae.
+y_true = [[1.5, 1], [-1, 1], [8, -6]]
+y_pred = [[0, 2], [-2, 2], [8, -5]]
+ejer2 = mean_absolute_error(y_true, y_pred)
+print("Ejercicio 2: ",ejer2)
+# ¿Qué valores deberían de tener el array pred para que el error fuese 0? ¿y para que error fuese de 0.33?
+#Para que te de 0 es igual que en el primer ejercicio, que los vectores sean iguales.
+y_true = [[1.5, 1], [-1, 1], [8, -6]]
+y_pred =  [[1.5, 1], [-1, 1], [8, -6]]
+mean_absolute_error(y_true, y_pred)
+
+# #Para que sea 0.33, en esta si que tuve que hacer varios cambios hasta hayar la combinacion perfecta
+y_true = [[1.5, 1], [-1, 1], [8, -6]]
+y_pred = [[1.8, 1], [-2, 1.35], [8, -5.67]]
+mean_absolute_error(y_true, y_pred)
+
+# Error cuadrático medio - mse
+from sklearn.metrics import mean_squared_error
+y_true = [3, -0.5, 2, 7]
+y_pred = [2.5, 0.0, 2, 8]
+mean_squared_error(y_true, y_pred)
+
+# Ejer 3: Crear dos vectores/arrays de valores ciertos y valores previstos, y calcular el mse.
+y_true = [5, -0.5, 2, 7]
+y_pred = [1.5, 1.0, 2, 8]
+ejer3 = mean_squared_error(y_true, y_pred)
+print("Ejercicio 3: ",ejer3)
+# ¿Qué valores deberían de tener el array pred para que el error fuese 0? ¿y para que error fuese de 0.25?
+#Para que fuese 0 sería lo mismo de siempre.
+y_true = [5, -0.5, 2, 7]
+y_pred = [5, -0.5, 2, 7]
+mean_squared_error(y_true, y_pred)
+# #Pa que fuese 0.25
+y_true = [5, -0.5, 2, 7]
+y_pred = [4.9, 0.13, 2.2, 7.75]
+mean_squared_error(y_true, y_pred)
+
+# Ejer 4: Crear dos matrices/arrays de valores ciertos y valores previstos, y calcular el mae.
+y_true = [35, -0.5, 2, 7]
+y_pred = [2.5, 1.0, 2, 8]
+ejer4 = mean_absolute_error(y_true, y_pred)
+print("Ejercicio 4 ",ejer4)
+# ¿Qué valores deberían de tener el array pred para que el error fuese 0? ¿y para que error fuese de 0.33?
+#Que sean iguales
+y_true = [35, -0.5, 2, 7]
+y_pred = [35, -0.5, 2, 7]
+mean_absolute_error(y_true, y_pred)
+# #Que sea 0.33
+y_true = [35, -0.5, 2, 7]
+y_pred = [35.0, 0.20, 2.3, 6.65]
+mean_absolute_error(y_true, y_pred)
+
+
+# Error de porcentaje absoluto medio - mape
+from sklearn.metrics import mean_absolute_percentage_error
+y_true = [3, -0.5, 2, 7]
+y_pred = [2.5, 0.0, 2, 8]
+mean_absolute_percentage_error(y_true, y_pred)
+
+
+# Ejer 5: Crear dos vectores/arrays de valores ciertos y valores previstos, y calcular el mape.
+y_true = [3, -0.9, 1, 7]
+y_pred = [1.5, 1.0, 2, 8]
+ejer5 = mean_absolute_percentage_error(y_true, y_pred)
+print("Ejercicio 5 ",ejer5)
+# # ¿Qué valores deberían de tener el array pred para que el error fuese 0?
+y_true = [3, -0.9, 1, 7]
+y_pred = [3, -0.9, 1, 7]
+mean_absolute_percentage_error(y_true, y_pred)
+
+
+# Ejer 6: Crear dos matrices/arrays de valores ciertos y valores previstos, y calcular el MAPE.
+y_true = [5, -1.9, 1, 7]
+y_pred = [0.5, 2.0, 2, 8]
+ejer6 = mean_absolute_percentage_error(y_true, y_pred)
+print("Ejercicio 6 ",ejer6)
+# ¿Qué valores deberían de tener el array pred para que el error fuese 0?
+y_true = [5, -1.9, 1, 7]
+y_pred = [5, -1.9, 1, 7]
+mean_absolute_percentage_error(y_true, y_pred)

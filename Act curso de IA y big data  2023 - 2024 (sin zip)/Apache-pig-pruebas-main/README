@@ -1,0 +1,31 @@
+Actividad Apache Pig - Eopiniones.csv
+
+Ejecute el código proceso_ooiniones.pig que aparece en el siguiente cuaderno de colab en el entorno de Big Data de Cloudera.
+
+https://colab.research.google.com/drive/1f2wZf5t5jQXrmhxWrN9gUcx3Ab7hRrB2?usp=sharing
+
+Saque las capturas de pantalla necesarias para justificar la ejecución de este.
+
+Ejecución en Colab
+
+!apt-get install openjdk-8-jdk-headless -qq > /dev/null
+
+!wget http://apache.osuosl.org/pig/pig-0.17.0/pig-0.17.0.tar.gz
+!tar -xvf pig-0.17.0.tar.gz
+!ls
+
+import os
+os.environ['JAVA_HOME'] = '/usr/lib/jvm/java-8-openjdk-amd64'
+os.environ['PIG_HOME'] = '/content/pig-0.17.0'
+os.environ['PATH'] = '%s/bin:%s' % (os.environ['PIG_HOME'], os.environ['PATH'])
+
+!pig -version
+
+
+- Como no se puede ejecutar los comandos de Pig de manera directa es necesario generar un script
+%%writefile nombredelscript.pig
+--añadimos el código
+
+En una nueva caja de código lo ejecutamos de la siguiente manera:
+!pig -x local -f script111.pig
+
